@@ -1,0 +1,34 @@
+Module:
+Modules in python is file that contains function,class, variables.
+USed to organize the coded and reuse logic.
+
+Builtin modules:
+math
+datetime
+
+All modules are in sys.path Paths
+
+
+Package:
+It is collection of modules.
+A folder, with multiple modules(.py)
+Optionally and __init__.py file
+
+This is used for organising large apps.
+
+Library: collection of packages and modules.
+1)Standard: 
+math
+datetime
+os
+sys
+random
+Web: Flask,Django
+Data:Numpy,Pandas
+AI/ML--Tensorflow, pytorch
+Automation-- Selenium
+API's-requests
+
+
+
+
