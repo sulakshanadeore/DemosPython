@@ -1,0 +1,295 @@
+# Python Fundamentals – Quick Notepad
+
+## 1. What is Python?
+
+* High-level, interpreted, dynamically typed language
+* Created by Guido van Rossum
+* Simple syntax, readable, beginner-friendly
+* Widely used in Web, Data Science, AI/ML, Automation, DevOps
+
+---
+
+## 2. Python Features
+
+* Interpreted (no compilation step)
+* Dynamically typed
+* Platform independent
+* Large standard library
+* Object-oriented + functional support
+
+---
+
+## 3. Installing & Running Python
+
+* Install from python.org
+* Check version: `python --version`
+* Run file: `python file.py`
+* Interactive shell: `python`
+
+---
+
+hello.py
+print("Hello World");
+
+python hello.py
+
+
+## 4. Variables & Data Types
+
+### Variables
+
+* No explicit data type declaration
+* Case-sensitive
+
+```python
+x = 10
+name = "Python"
+```
+
+### Built-in Data Types
+
+* int, float, complex
+* str
+* bool
+Examples:
+# x=10
+# print(type(x))
+ #print(x) //comment(#)
+
+ age=float(input("Enter Age:"))
+ print(age)
+
+
+ x=y=z=100
+ print(x)
+ print(y)
+print(z)
+
+z=complex(7,5J)
+print("Real=",  z.real)
+print("Imaginary=", z.imag)
+
+d=complex(7,5)
+print("Real=",  d.real)
+print("Imaginary=", d.imag)
+
+
+
+* list:Square Brackets,Ordered Collection,Mutable(can change),Allows duplicate values
+numbers=[10,20,30,40]
+
+tuple:Parentheses,Ordered, Immubtable(cannot change), Allows Duplicate values
+data=(10,20,30)
+
+set:Curly brackets,unordered,no duplicate values,mutable(can change)
+setex={10,20,30,20,30}
+
+ dict: Key-value pairs
+keys must be unique
+Mutable
+
+---
+
+## 5. Type Conversion
+
+```python
+x = int("10")
+y = float(5)
+z = str(100)
+```
+
+---
+
+## 6. Operators
+
+### Arithmetic
+
+`+  -  *  /  %  **  //`
+
+### Comparison
+
+`==  !=  >  <  >=  <=`
+
+### Logical
+
+`and  or  not`
+
+---
+
+## 7. Input & Output
+
+```python
+name = input("Enter name: ")
+print("Hello", name)
+```
+
+---
+
+## 8. Control Statements
+
+### if / elif / else
+
+```python
+if age >= 18:
+    print("Adult")
+else:
+    print("Minor")
+```
+
+### Loops
+
+#### for loop
+
+```python
+for i in range(1,6):
+    print(i)
+```
+
+#### while loop
+
+```python
+i = 1
+while i <= 5:
+    print(i)
+    i += 1
+```
+
+---
+
+## 9. break, continue, pass
+
+```python
+for i in range(5):
+    if i == 3:
+        break
+```
+
+---
+
+## 10. Data Structures
+
+### List (mutable)
+
+```python
+nums = [1,2,3]
+nums.append(4)
+```
+
+### Tuple (immutable)
+
+```python
+t = (1,2,3)
+```
+
+### Set (unique values)
+
+```python
+s = {1,2,3}
+```
+
+### Dictionary (key-value)
+
+```python
+emp = {"id":1, "name":"Amit"}
+```
+
+---
+
+## 11. Functions
+
+```python
+def add(a, b):
+    return a + b
+```
+
+* Default arguments
+* Keyword arguments
+* Return multiple values
+
+---
+
+## 12. Lambda Function
+
+```python
+add = lambda a,b: a+b
+```
+---------------------------------------------------------------------
+		self 	     |	 class         | 	 	static
+refers to:   object    |	 class       	  |	class
+used in :  instance |	class      	  |	class
+               methods |	methods 	 |	methods
+access: instanceData| class data|   	cannot access class data
+keyword:	 self        | cls,@class  |	@staticmethod
+				@classmethod|
+
+
+-------------------------------------------------------
+## 13. Modules & Packages
+
+* Import module
+
+```python
+import math
+from math import sqrt
+```
+
+---
+
+## 14. Exception Handling
+
+```python
+try:
+    x = int(input())
+except ValueError:
+    print("Invalid input")
+finally:
+    print("Done")
+```
+
+---
+
+## 15. File Handling
+
+```python
+f = open("data.txt","w")
+f.write("Hello")
+f.close()
+```
+
+---
+
+## 16. OOP Basics
+
+### Class & Object
+
+```python
+class Employee:
+    def __init__(self, name):
+        self.name = name
+```
+
+* Inheritance
+* Polymorphism
+* Encapsulation
+
+---
+
+## 17. Python Keywords
+
+* `True, False, None`
+* `def, class, return`
+* `if, elif, else`
+* `for, while, break, continue`
+
+---
+
+## 18. Virtual Environment (Basic)
+
+* Create: `python -m venv venv`
+* Activate: `venv\Scripts\activate`
+
+---
+
+
+
+
